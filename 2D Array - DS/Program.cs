@@ -18,34 +18,53 @@ namespace _2D_Array___DS
     {
         static int hourglassSum(int[][] arr)
         {
-            int length = arr.Length;
-            var array = new int[3][];
-            for (int i = 0; i < arr.Length; i++)
-            {
-                arr[]
-            }
-            var a = arr.Rank;
+            int maxSum = 0;
+            int temp = 0;
+            int iterator = 0;
+            int length = 3;
 
-            return arr[0][2];
+            for (int i = 0; i < 16; i++)
+            {
+                for (int j = iterator; j < length; j++)
+                {
+                    for (int k = iterator; k < length; k++)
+                    {
+                        if (j % 2 == 0 || k % 2 != 0)
+                        {
+                            temp += arr[j][k];
+                        }
+                    }
+                }
+                Console.Write(temp + "  ");
+                maxSum = temp > maxSum ? temp : maxSum;
+
+                if (iterator != 6)
+                    iterator += 1;
+                else
+                    iterator = 0;
+
+                if (length != 6)
+                    length += 1;
+                else
+                    length = 3;
+
+                temp = 0;
+            }
+            return maxSum;
         }
 
         static void Main(string[] args)
         {
-           // TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
             int[][] arr = new int[6][];
 
             for (int i = 0; i < 6; i++)
             {
                 arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
             }
-
-            int result = hourglassSum(arr);
-
-            //textWriter.WriteLine(result);
-
-            //textWriter.Flush();
-            //textWriter.Close();
+            Console.WriteLine();           
+            int result = hourglassSum(arr);            
+            Console.WriteLine(result);
+            Console.ReadLine();
         }
     }
 
