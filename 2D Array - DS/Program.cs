@@ -21,34 +21,60 @@ namespace _2D_Array___DS
             int maxSum = 0;
             int temp = 0;
             int iterator = 0;
+            int rowIndex = 0;
+            int columnIndex = 0;
             int length = 3;
 
             for (int i = 0; i < 16; i++)
             {
-                for (int j = iterator; j < length; j++)
+
+                for (int a = 0; a < 4; a++)
                 {
-                    for (int k = iterator; k < length; k++)
+                    var count = 1;
+                    var isFirst = true;
+                    for (int j = rowIndex; j < length; j++, count++)
                     {
-                        if (j % 2 == 0 || k % 2 != 0)
+                        for (int k = columnIndex; k < length; k++)
                         {
-                            temp += arr[j][k];
+                            if (count != 2)
+                                temp += arr[j][k];
+                            else
+                            {
+                                temp += arr[j][k];
+                                if (isFirst)
+                                {
+                                    temp = temp - arr[j][k] - arr[j][k + 2];
+                                    isFirst = false;
+                                }
+
+                            }
                         }
                     }
+                    columnIndex += 1;
+                    Console.Write(temp + "  ");
+                    maxSum = temp > maxSum ? temp : maxSum;
+                    temp = 0;
+
+                    if (a == 3)
+                    {
+                        a = -1;
+                        rowIndex += 1;
+                        columnIndex = 0;
+                    }
+
                 }
-                Console.Write(temp + "  ");
-                maxSum = temp > maxSum ? temp : maxSum;
 
-                if (iterator != 6)
-                    iterator += 1;
-                else
-                    iterator = 0;
+                //if (iterator != 6)
+                //    iterator += 1;
+                //else
+                //    iterator = 0;
 
-                if (length != 6)
-                    length += 1;
-                else
-                    length = 3;
+                //if (length != 6)
+                //    length += 1;
+                //else
+                //    length = 3;
 
-                temp = 0;
+                //temp = 0;
             }
             return maxSum;
         }
@@ -61,8 +87,8 @@ namespace _2D_Array___DS
             {
                 arr[i] = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp));
             }
-            Console.WriteLine();           
-            int result = hourglassSum(arr);            
+            Console.WriteLine();
+            int result = hourglassSum(arr);
             Console.WriteLine(result);
             Console.ReadLine();
         }
