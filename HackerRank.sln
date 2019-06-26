@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29009.5
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D Array - DS", "2D Array - DS\2D Array - DS.csproj", "{BA50020C-5FEF-4BDD-B241-3972C5AB08E6}"
 EndProject
@@ -10,6 +10,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion3", "Recursion3\Recursion3.csproj", "{DF033575-EBC3-4153-A425-7CB4836184A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryNumbers", "BinaryNumbers\BinaryNumbers.csproj", "{6CD7E7CF-D223-4F96-8EF4-C7C3C8610247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "..\HackerRankChallenges\HackerRank-master\AbstractClasses\AbstractClasses.csproj", "{1726E700-39EE-4B1C-A341-1CB8345C2D32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "..\HackerRankChallenges\HackerRank-master\Inheritance\Inheritance.csproj", "{535E0C35-C79A-4201-904E-8245ABBC3406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope", "..\HackerRankChallenges\HackerRank-master\Scope\Scope.csproj", "{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{6CD7E7CF-D223-4F96-8EF4-C7C3C8610247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD7E7CF-D223-4F96-8EF4-C7C3C8610247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD7E7CF-D223-4F96-8EF4-C7C3C8610247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1726E700-39EE-4B1C-A341-1CB8345C2D32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1726E700-39EE-4B1C-A341-1CB8345C2D32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1726E700-39EE-4B1C-A341-1CB8345C2D32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1726E700-39EE-4B1C-A341-1CB8345C2D32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535E0C35-C79A-4201-904E-8245ABBC3406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535E0C35-C79A-4201-904E-8245ABBC3406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535E0C35-C79A-4201-904E-8245ABBC3406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535E0C35-C79A-4201-904E-8245ABBC3406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
