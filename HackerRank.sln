@@ -11,11 +11,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion3", "Recursion3\Re
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinaryNumbers", "BinaryNumbers\BinaryNumbers.csproj", "{6CD7E7CF-D223-4F96-8EF4-C7C3C8610247}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "..\HackerRankChallenges\HackerRank-master\AbstractClasses\AbstractClasses.csproj", "{1726E700-39EE-4B1C-A341-1CB8345C2D32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{1726E700-39EE-4B1C-A341-1CB8345C2D32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "..\HackerRankChallenges\HackerRank-master\Inheritance\Inheritance.csproj", "{535E0C35-C79A-4201-904E-8245ABBC3406}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{535E0C35-C79A-4201-904E-8245ABBC3406}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope", "..\HackerRankChallenges\HackerRank-master\Scope\Scope.csproj", "{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope", "Scope\Scope.csproj", "{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{2232D2B1-CC6F-453A-B40A-61A8428159FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
