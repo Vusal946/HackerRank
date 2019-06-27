@@ -9,19 +9,59 @@ namespace LinkedList
 
         public static Node insert(Node head, int data)
         {
+            ///First Algoritm
+            //var newNode = new Node(data);           
+
+            //if (head == null)
+            //    head = newNode;
+            //else
+            //{
+            //    var count = 0;
+            //    Node end = head;
+            //    while (end != null)
+            //    {
+            //        end = end.next;
+            //        count += 1;
+            //    }
+
+            //    if (count == 1)
+            //        head.next = newNode;
+            //    else if (count == 2)
+            //        head.next.next = newNode;
+            //    else if (count == 3)
+            //        head.next.next.next = newNode;
+            //    else if (count == 4)
+            //        head.next.next.next.next = newNode;
+            //    else if (count == 5)
+            //        head.next.next.next.next.next = newNode;
+            //}
+            //return head;
+
+            /// Second Algoritm
+            //if (head == null)
+            //    return new Node(data);
+            //else if (head.next == null)           
+            //    head.next = new Node(data);            
+            //else            
+            //    insert(head.next, data);
+
+            ///Third Algoritm
             if (head == null)
-                head = new Node(data);
-            else
+                return new Node(data);
+
+            Node current = head;
+
+            Node last = head;
+
+            while (current != null)
             {
-                Node end = head;
-                Node temp = end;
-                while (temp.next != null)
-                {
-                    temp = temp.next;
-                }
-                temp.next = new Node(data);
-                head = end;
+                if (current.next == null)
+                    last = current;
+
+                current = current.next;
             }
+
+            last.next = new Node(data);
 
             return head;
         }

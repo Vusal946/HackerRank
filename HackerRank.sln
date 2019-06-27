@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.539
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2D Array - DS", "2D Array - DS\2D Array - DS.csproj", "{BA50020C-5FEF-4BDD-B241-3972C5AB08E6}"
 EndProject
@@ -18,6 +18,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scope", "Scope\Scope.csproj", "{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{2232D2B1-CC6F-453A-B40A-61A8428159FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions - StringToInteger", "Exceptions - StringToInteger\Exceptions - StringToInteger.csproj", "{DA087044-8E38-4C30-B35F-D0C24ABF6A45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreExceptions", "MoreExceptions\MoreExceptions.csproj", "{5028A16D-9C36-4E1B-9B25-215A882B7DFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueuesAndStacks", "QueuesAndStacks\QueuesAndStacks.csproj", "{3A797E97-719B-488B-82BF-710E90CE2D88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2232D2B1-CC6F-453A-B40A-61A8428159FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA087044-8E38-4C30-B35F-D0C24ABF6A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA087044-8E38-4C30-B35F-D0C24ABF6A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA087044-8E38-4C30-B35F-D0C24ABF6A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA087044-8E38-4C30-B35F-D0C24ABF6A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5028A16D-9C36-4E1B-9B25-215A882B7DFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5028A16D-9C36-4E1B-9B25-215A882B7DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5028A16D-9C36-4E1B-9B25-215A882B7DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5028A16D-9C36-4E1B-9B25-215A882B7DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A797E97-719B-488B-82BF-710E90CE2D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A797E97-719B-488B-82BF-710E90CE2D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A797E97-719B-488B-82BF-710E90CE2D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A797E97-719B-488B-82BF-710E90CE2D88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
