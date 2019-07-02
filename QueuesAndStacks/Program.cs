@@ -1,47 +1,36 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QueuesAndStacks
 {
     class Program
     {
-        private List<char> Word;
-        void pushCharacter(char value)
+        private Stack<char> _wordStack;
+        private Queue<char> _wordQueue;
+        void PushCharacter(char value)
         {
-            if (Word == null)
-                Word = new List<char>();
+            if (_wordStack == null)
+                _wordStack = new Stack<char>();
 
-            Word.Add(value);
+            _wordStack.Push(value);
         }
-        void enqueueCharacter(char value)
+        void EnqueueCharacter(char value)
         {
-            var temp = new List<char>();
-            for (int i = Word.Count; i > 0; i--)
+            if (_wordQueue==null)
             {
-                temp.Add(Word[i]);
+                _wordQueue=new Queue<char>();
             }
-            Word = temp;
+            _wordQueue.Enqueue(value);
         }
-        List<char> popCharacter()
+        char PopCharacter()
         {
-            Word.RemoveAt(Word.Count - 1);
-            return Word;
+            return _wordStack.Pop();
         }
-        List<char> dequeueCharacter()
+        char DequeueCharacter()
         {
-            var temp = new List<char>();
-            for (int i = 0; i < Word.Count; i++)
-            {
-                temp.Add(Word[i]);
-            }
-            Word = temp;
-
-            return Word;
+            return _wordQueue.Dequeue();
         }
-        static void Main(string[] args)
+        static void Main()
         {
             // read the string s.
             string s = Console.ReadLine();
@@ -52,8 +41,8 @@ namespace QueuesAndStacks
             // push/enqueue all the characters of string s to stack.
             foreach (char c in s)
             {
-                obj.pushCharacter(c);
-                obj.enqueueCharacter(c);
+                obj.PushCharacter(c);
+                obj.EnqueueCharacter(c);
             }
 
             bool isPalindrome = true;
@@ -63,7 +52,7 @@ namespace QueuesAndStacks
             // compare both the characters.
             for (int i = 0; i < s.Length / 2; i++)
             {
-                if (obj.popCharacter() != obj.dequeueCharacter())
+                if (obj.PopCharacter() != obj.DequeueCharacter())
                 {
                     isPalindrome = false;
 
@@ -80,6 +69,8 @@ namespace QueuesAndStacks
             {
                 Console.Write("The word, {0}, is not a palindrome.", s);
             }
+
+            Console.ReadLine();
         }
     }
 }
