@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreExceptions", "MoreExcep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueuesAndStacks", "QueuesAndStacks\QueuesAndStacks.csproj", "{3A797E97-719B-488B-82BF-710E90CE2D88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{D3572260-BB94-4FDB-B9D3-8D8D308DB628}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTrees", "BinarySearchTrees\BinarySearchTrees.csproj", "{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{3A797E97-719B-488B-82BF-710E90CE2D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A797E97-719B-488B-82BF-710E90CE2D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A797E97-719B-488B-82BF-710E90CE2D88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3572260-BB94-4FDB-B9D3-8D8D308DB628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3572260-BB94-4FDB-B9D3-8D8D308DB628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3572260-BB94-4FDB-B9D3-8D8D308DB628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3572260-BB94-4FDB-B9D3-8D8D308DB628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
