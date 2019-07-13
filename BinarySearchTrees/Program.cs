@@ -14,8 +14,19 @@ class Solution
 
     static int getHeight(Node root)
     {
-        //Write your code here
-        return 0;
+        int heightLeft = 0;
+        int heightRight = 0;
+
+        if (root.left != null)
+        {
+            heightLeft = getHeight(root.left) + 1;
+        }
+        if (root.right != null)
+        {
+            heightRight = getHeight(root.right) + 1;
+        }
+
+        return (heightLeft > heightRight ? heightLeft : heightRight);
     }
 
     static Node insert(Node root, int data)
@@ -51,6 +62,7 @@ class Solution
         }
         int height = getHeight(root);
         Console.WriteLine(height);
+        Console.ReadKey();
 
     }
 }
