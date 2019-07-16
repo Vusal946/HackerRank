@@ -13,39 +13,32 @@ namespace Sorting
             int n = Convert.ToInt32(Console.ReadLine());
             string[] a_temp = Console.ReadLine().Split(' ');
             int[] a = Array.ConvertAll(a_temp, Int32.Parse);
-            var b = Sort(a);
+            // Write Your Code Here
 
-
-            Console.ReadLine();
+            Sort(a);
         }
 
-        static int[] Sort(int[] array)
+        static void Sort(int[] array)
         {
-            int swapCount = 0;
-            int[] temp = new int[array.Length];
-          
+            int numSwaps = 0;
+            int temp;
             for (int i = 0; i < array.Length - 1; i++)
             {
-                for (int j = 1; j < array.Length - 1; j++)
+                for (int j = 0; j < array.Length - 1; j++)
                 {
-                   
-                    if (array[i] > array[j + 1])
+                    if (array[j] > array[j + 1])
                     {
-                        swapCount += 1;
-                        temp[j] = array[j + 1];
-                    }
-                    else
-                    {
-                        temp[j] = array[j];
+                        temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                        numSwaps++;
                     }
                 }
             }
 
-            Console.WriteLine($"Array is sorted in {swapCount} swaps.");
-            Console.WriteLine($"First Element: {temp[0]}");
-            Console.WriteLine($"Last Element: {temp[array.Length - 1]}");
-            array = temp;
-            return array;
+            Console.WriteLine($"Array is sorted in {numSwaps} swaps.");
+            Console.WriteLine($"First Element: {array[0]}");
+            Console.WriteLine($"Last Element: {array[array.Length-1]}");
         }
     }
 }

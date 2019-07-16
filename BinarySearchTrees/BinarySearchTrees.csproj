@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C00E230-BF85-4BF3-A29C-D884F802D6C6}</ProjectGuid>
+    <ProjectGuid>{AF36AE0C-AADB-4E9E-B13E-1D68E6AEDFA0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Sorting</RootNamespace>
-    <AssemblyName>Sorting</AssemblyName>
+    <RootNamespace>BinarySearchTrees</RootNamespace>
+    <AssemblyName>BinarySearchTrees</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
