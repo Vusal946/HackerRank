@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchTrees", "Binary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{4C00E230-BF85-4BF3-A29C-D884F802D6C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSTLevel-OrderTraversal", "BSTLevel-OrderTraversal\BSTLevel-OrderTraversal.csproj", "{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{4C00E230-BF85-4BF3-A29C-D884F802D6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C00E230-BF85-4BF3-A29C-D884F802D6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C00E230-BF85-4BF3-A29C-D884F802D6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
