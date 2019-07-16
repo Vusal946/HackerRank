@@ -1,9 +1,37 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace BSTLevel_OrderTraversal
 {
     class Solution
     {
+        static void A(Node root)
+        {
+            if (root != null)
+            {
+                var queue = new Queue();
+                queue.Enqueue(root);
+                Console.Write(root.data + " ");
+                while (queue.Count!=0)
+                {
+                    var tree = (Node)queue.Dequeue();
+
+                    if (tree.left != null)
+                        Console.Write(tree.left.data + " ");
+
+                    if (tree.right != null)
+                        Console.Write(tree.right.data + " ");
+
+                    if (tree.left != null)
+                        queue.Enqueue(tree.left);
+
+                    if (tree.right != null)
+                        queue.Enqueue(tree.right);
+                }
+
+            }
+        }
 
         static void LevelOrder(Node root)
         {
@@ -35,9 +63,20 @@ namespace BSTLevel_OrderTraversal
 
                         current = previous;
                     }
-                    else if (count % 2 == 1)
+                    else
                     {
-                        if (count != 3 && (next.left?.left != null || next.left?.right != null))
+                        //if (count != 3 && (next.left?.left != null || next.left?.right != null))
+                        //{
+                        //    other = next.left;
+                        //    current = other;
+                        //}
+                        //else if (next.right != null)
+                        //{
+                        //    next = next.right;
+                        //    current = next;
+                        //}
+
+                        if (next.left?.left != null || next.left?.right != null)
                         {
                             other = next.left;
                             current = other;
@@ -47,6 +86,8 @@ namespace BSTLevel_OrderTraversal
                             next = next.right;
                             current = next;
                         }
+
+                        current = next;
                     }
                 }
             }
@@ -64,7 +105,7 @@ namespace BSTLevel_OrderTraversal
 
         public static void MethodName(Node root)
         {
-            if (root!=null)
+            if (root != null)
             {
                 if (root.left != null)
                     Console.Write(root.left.data + " ");
@@ -73,10 +114,10 @@ namespace BSTLevel_OrderTraversal
                     Console.Write(root.right.data + " ");
 
                 root = root.left;
-               
+
                 MethodName(root);
             }
-          
+
         }
         static Node Insert(Node root, int data)
         {
@@ -112,7 +153,7 @@ namespace BSTLevel_OrderTraversal
 
             Console.WriteLine();
             Console.WriteLine();
-            LevelOrderRecursiv(root);
+            A(root);
             Console.ReadLine();
 
         }
