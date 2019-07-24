@@ -1,45 +1,24 @@
 ﻿using System;
 using System.Linq;
 
-class Difference
+namespace Scope
 {
-    private int[] elements;
-    public int maximumDifference;
+    // End of Difference Class
 
-    public Difference(int[] elements)
+    class Program
     {
-        this.elements = elements;
-    }
-
-    // Add your code here
-    public int computeDifference()
-    {
-        for (int i = 0; i < elements.Length; i++)
+        static void Main(string[] args)
         {
-            for (int j = elements.Length-1; j > 0; j--)
-            {
-                maximumDifference = Math.Abs(elements[i] - elements[j]) > maximumDifference
-                    ? Math.Abs(elements[i] - elements[j])
-                    : maximumDifference;
-            }
+            Convert.ToInt32(Console.ReadLine());
+
+            int[] a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
+
+            Difference d = new Difference(a);
+
+            d.computeDifference();
+
+            Console.Write(d.maximumDifference);
         }
-        return maximumDifference;
-    }
-
-} // End of Difference Class
-
-class Program
-{
-    static void Main(string[] args)
-    {
-        Convert.ToInt32(Console.ReadLine());
-
-        int[] a = Console.ReadLine().Split(' ').Select(x => Convert.ToInt32(x)).ToArray();
-
-        Difference d = new Difference(a);
-
-        d.computeDifference();
-
-        Console.Write(d.maximumDifference);
+   
     }
 }

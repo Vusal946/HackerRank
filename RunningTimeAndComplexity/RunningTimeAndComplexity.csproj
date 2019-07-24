@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}</ProjectGuid>
+    <ProjectGuid>{2329C792-5914-4214-8C78-BCCCE1F5801C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Scope</RootNamespace>
-    <AssemblyName>Scope</AssemblyName>
+    <RootNamespace>RunningTimeAndComplexity</RootNamespace>
+    <AssemblyName>RunningTimeAndComplexity</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Difference.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
