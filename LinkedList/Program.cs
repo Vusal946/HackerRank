@@ -9,7 +9,7 @@ namespace LinkedList
 
         public static Node insert(Node head, int data)
         {
-            ///First Algoritm
+            //First Algoritm
             //var newNode = new Node(data);           
 
             //if (head == null)
@@ -37,7 +37,7 @@ namespace LinkedList
             //}
             //return head;
 
-            /// Second Algoritm
+            // Second Algoritm
             //if (head == null)
             //    return new Node(data);
             //else if (head.next == null)           
@@ -46,18 +46,19 @@ namespace LinkedList
             //    insert(head.next, data);
 
             ///Third Algoritm
-            if (head == null)
+           
+                if (head == null)
                 return new Node(data);
 
             Node current = head;
 
             Node last = head;
-
+           
             while (current != null)
             {
                 if (current.next == null)
                     last = current;
-
+                
                 current = current.next;
             }
 
