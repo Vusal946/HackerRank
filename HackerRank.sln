@@ -33,7 +33,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSTLevel-OrderTraversal", "BSTLevel-OrderTraversal\BSTLevel-OrderTraversal.csproj", "{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreLinkedLists", "MoreLinkedLists\MoreLinkedLists.csproj", "{D17F5B6F-0967-4D02-88D2-697911195225}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreLinkedLists", "MoreLinkedLists\MoreLinkedLists.csproj", "{4D28D112-6C2C-46B2-84E7-33EF08B1475D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunningTimeAndComplexity", "RunningTimeAndComplexity\RunningTimeAndComplexity.csproj", "{2329C792-5914-4214-8C78-BCCCE1F5801C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedLogic", "NestedLogic\NestedLogic.csproj", "{9DFF50C6-5F5F-4BF1-8AE7-02E7BC8CAD6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegEx", "RegEx\RegEx.csproj", "{4DCA26A1-396B-4036-BA01-A597B6084649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{5A723EEA-BD8A-45D5-AF8D-8E1B206255D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitwiseAND", "BitwiseAND\BitwiseAND.csproj", "{CDBF3390-5E18-4803-AB6E-058BA58188DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,10 +111,6 @@ Global
 		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E9A108-BCFD-425F-A32A-8A56C27F1EFD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D17F5B6F-0967-4D02-88D2-697911195225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D17F5B6F-0967-4D02-88D2-697911195225}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D17F5B6F-0967-4D02-88D2-697911195225}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D17F5B6F-0967-4D02-88D2-697911195225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

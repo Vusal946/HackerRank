@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3F65FB31-9EC0-44F8-89D2-F3BD0C983944}</ProjectGuid>
+    <ProjectGuid>{9DFF50C6-5F5F-4BF1-8AE7-02E7BC8CAD6C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Scope</RootNamespace>
-    <AssemblyName>Scope</AssemblyName>
+    <RootNamespace>NestedLogic</RootNamespace>
+    <AssemblyName>NestedLogic</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Difference.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
